@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def hubble(redshift):
+def hubble(redshift, cosmo_dict):
     hubble_const = cosmo_dict["H0"]
     matter = cosmo_dict["omega_m_0"] * (1 + redshift) ** 3
     curvature = cosmo_dict["omega_k_0"] * (1 + redshift) ** 2
